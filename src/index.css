@@ -6,26 +6,26 @@
 
 @layer base {
   :root {
-    --background: 220 5% 8%;
-    --foreground: 210 20% 92%;
+    --background: 240 10% 6%; /* Discord gray-very-dark */
+    --foreground: 216 13% 92%; /* slightly muted white */
 
-    --card: 220 5% 10%;
-    --card-foreground: 210 20% 92%;
+    --card: 240 10% 9%;
+    --card-foreground: 216 13% 92%;
 
-    --popover: 220 5% 10%;
-    --popover-foreground: 210 20% 92%;
+    --popover: 240 10% 9%;
+    --popover-foreground: 216 13% 92%;
 
-    --primary: 160 60% 45%;
-    --primary-foreground: 220 20% 7%;
+    --primary: 228 100% 57%; /* Discord blurple */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 8% 14%;
-    --secondary-foreground: 210 20% 80%;
+    --secondary: 250 30% 20%; /* dark grey panel */
+    --secondary-foreground: 216 15% 90%;
 
-    --muted: 220 5% 16%;
-    --muted-foreground: 215 12% 55%;
+    --muted: 240 10% 21%;
+    --muted-foreground: 216 15% 80%;
 
-    --accent: 160 50% 38%;
-    --accent-foreground: 220 20% 7%;
+    --accent: 215 100% 60%; /* lighter blurple accent */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 210 40% 98%;
