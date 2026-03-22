@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  :root {
+    --background: 220 20% 7%;
+    --foreground: 210 20% 92%;
+
+    --card: 220 18% 10%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 220 18% 10%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 160 60% 45%;
+    --primary-foreground: 220 20% 7%;
+
+    --secondary: 220 16% 14%;
+    --secondary-foreground: 210 20% 80%;
+
+    --muted: 220 14% 16%;
+    --muted-foreground: 215 12% 55%;
+
+    --accent: 160 50% 38%;
+    --accent-foreground: 220 20% 7%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 14% 16%;
+    --input: 220 14% 18%;
+    --ring: 160 60% 45%;
+
+    --radius: 0.75rem;
+
+    --section-gap: 6rem;
+    --hero-accent: 160 60% 45%;
+    --timeline-line: 220 14% 20%;
+    --card-hover: 220 18% 13%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    overflow-wrap: break-word;
+  }
+
+  code, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-24;
+  }
+
+  .section-spacing {
+    @apply py-20 md:py-28;
+  }
+
+  .heading-xl {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05];
+  }
+
+  .heading-lg {
+    @apply text-2xl md:text-3xl font-semibold tracking-tight;
+  }
+
+  .heading-section {
+    @apply text-sm font-mono font-medium tracking-widest uppercase text-primary mb-4;
+  }
+
+  .card-surface {
+    @apply bg-card border border-border rounded-xl;
+    transition: background-color 0.3s ease-out, box-shadow 0.3s ease-out;
+  }
+
+  .card-surface:hover {
+    background-color: hsl(var(--card-hover));
+    box-shadow: 0 8px 32px -8px hsl(var(--primary) / 0.08);
+  }
+
+  .skill-chip {
+    @apply px-3 py-1.5 text-sm font-medium rounded-lg bg-secondary text-secondary-foreground border border-border;
+    transition: border-color 0.2s ease-out, background-color 0.2s ease-out;
+  }
+
+  .skill-chip:hover {
+    border-color: hsl(var(--primary) / 0.4);
+    background-color: hsl(var(--primary) / 0.08);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
