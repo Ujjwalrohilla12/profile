@@ -29,8 +29,8 @@ export const ContactSection = () => {
 
               <div className="space-y-4">
                 {[
-                  { icon: Mail, label: "ujjwalrohilla.dev@gmail.com", href: "mailto:ujjwalrohilla.dev@gmail.com" },
-                  { icon: Phone, label: "+91 XXXXXXXXXX", href: "#" },
+                  { icon: Mail, label: "rohillaujjwal39@gmail.com", href: "mailto:rohillaujjwal39@gmail.com" },
+                  { icon: Phone, label: "+91 9266333385", href: "#" },
                   { icon: Github, label: "github.com/Ujjwalrohilla12", href: "https://github.com/Ujjwalrohilla12" },
                   { icon: Linkedin, label: "LinkedIn Profile", href: "https://www.linkedin.com/in/ujjwal-rohilla-70a916256/" },
                 ].map(({ icon: Icon, label, href }) => (

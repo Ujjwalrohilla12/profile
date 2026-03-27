@@ -50,5 +50,5 @@ Open `http://localhost:5173` in your browser.
 
 - GitHub: https://github.com/Ujjwalrohilla12
 - LinkedIn: https://www.linkedin.com/in/ujjwal-rohilla-70a916256/
-- Email: ujjwalrohilla.dev@gmail.com
+- Email: rohillaujjwal39@gmail.com
 
